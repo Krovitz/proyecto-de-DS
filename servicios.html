@@ -20,10 +20,20 @@
       </nav>
     </header>
     <main>
+      <section class="hero-servicios">
+        <div class="hero-servicios-content">
+          <h1>Servicios</h1>
+          <div class="breadcrumbs">
+            <a href="index.html">Home</a> > <span>Servicios</span>
+          </div>
+        </div>
+      </section>
       <section class="servicios">
-        <h1>Servicios</h1>
         <div class="servicios-lista">
           <div class="servicio">
+            <div class="servicio-icono">
+              <img src="../proyecto-software-sprint-main/app/images/icons/services/icon-website.svg" alt="Desarrollo Web" />
+            </div>
             <h2>Desarrollo Web a Medida</h2>
             <p>
               Sitios corporativos, portales institucionales y sistemas web
@@ -31,10 +41,16 @@
             </p>
           </div>
           <div class="servicio">
+            <div class="servicio-icono">
+              <img src="../proyecto-software-sprint-main/app/images/icons/services/icon-software.svg" alt="Aplicaciones Móviles" />
+            </div>
             <h2>Aplicaciones Móviles</h2>
             <p>Apps nativas y multiplataforma para Android e iOS.</p>
           </div>
           <div class="servicio">
+            <div class="servicio-icono">
+              <img src="../proyecto-software-sprint-main/app/images/icons/services/icon-system-integration.svg" alt="Integración de Sistemas" />
+            </div>
             <h2>Integración de Sistemas y APIs</h2>
             <p>
               Conectamos plataformas y automatizamos procesos para mejorar la
@@ -46,7 +62,29 @@
     </main>
     <footer>
       <div class="footer-content">
-        <a href="index.html">Volver al inicio</a>
+        <form class="newsletter">
+          <label for="email">Suscribite a nuestro newsletter:</label>
+          <input type="email" id="email" placeholder="Tu email" />
+          <button type="submit">Suscribirme</button>
+        </form>
+        <div class="footer-links">
+          <a href="#">Política de privacidad</a> |
+          <a href="#">Términos de uso</a>
+        </div>
+        <div class="footer-social">
+          <a href="https://linkedin.com/company/softnova" target="_blank"
+            >LinkedIn</a
+          >
+          <a href="https://twitter.com/softnova" target="_blank">Twitter</a>
+          <a href="https://instagram.com/softnova" target="_blank">Instagram</a>
+        </div>
+        <div class="footer-contact">
+          <p>
+            Av. Siempre Viva 1234, CABA, Argentina | +54 11 4567-8901 |
+            contacto@softnova.com.ar
+          </p>
+          <p>Horario: Lunes a Viernes de 9 a 18 hs.</p>
+        </div>
       </div>
     </footer>
   </body>
