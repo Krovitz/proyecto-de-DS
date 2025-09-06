@@ -1,0 +1,201 @@
+/* Paleta de colores */
+:root {
+    --blanco: #fff;
+    --rojo: #D32F2F;
+    --negro: #111;
+    --gris: #f5f5f5;
+    --gris-oscuro: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--gris);
+    color: var(--negro);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: var(--negro);
+    color: var(--blanco);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--rojo);
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+.nav-links a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.nav-links a:hover {
+    color: var(--rojo);
+}
+
+.hero {
+    background: linear-gradient(120deg, var(--rojo) 60%, var(--negro) 100%);
+    color: var(--blanco);
+    padding: 4rem 2rem 3rem 2rem;
+    text-align: center;
+}
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.cta {
+    display: inline-block;
+    background: var(--blanco);
+    color: var(--rojo);
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 1.5rem;
+    transition: background 0.2s, color 0.2s;
+}
+.cta:hover {
+    background: var(--rojo);
+    color: var(--blanco);
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.resumen, .servicios-home, .proyectos-home, .testimonios, .equipo, .servicios, .trabajos, .contacto {
+    background: var(--blanco);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.servicios-lista, .miembros, .trabajos-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+.servicio, .miembro, .trabajo {
+    flex: 1 1 250px;
+    background: var(--gris);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+    margin-bottom: 1rem;
+}
+
+.testimonios blockquote {
+    font-style: italic;
+    color: var(--rojo);
+    margin: 0 0 0.5rem 0;
+}
+.testimonios cite {
+    color: var(--gris-oscuro);
+    font-size: 0.95rem;
+}
+
+.footer-content {
+    background: var(--negro);
+    color: var(--blanco);
+    text-align: center;
+    padding: 2rem 1rem 1rem 1rem;
+}
+.footer-links a, .footer-social a {
+    color: var(--blanco);
+    margin: 0 0.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.footer-links a:hover, .footer-social a:hover {
+    color: var(--rojo);
+}
+.footer-contact {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+
+.newsletter {
+    margin-bottom: 1rem;
+}
+.newsletter input[type="email"] {
+    padding: 0.5rem;
+    border-radius: 2rem;
+    border: 1px solid var(--gris-oscuro);
+    margin-right: 0.5rem;
+}
+.newsletter button {
+    background: var(--rojo);
+    color: var(--blanco);
+    border: none;
+    border-radius: 2rem;
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.newsletter button:hover {
+    background: var(--negro);
+}
+
+.form-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.form-contacto input, .form-contacto textarea {
+    padding: 0.75rem;
+    border-radius: 6px;
+    border: 1px solid var(--gris-oscuro);
+    font-size: 1rem;
+}
+.form-contacto button {
+    background: var(--rojo);
+    color: var(--blanco);
+    border: none;
+    border-radius: 2rem;
+    padding: 0.75rem 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background 0.2s;
+}
+.form-contacto button:hover {
+    background: var(--negro);
+}
+
+.mapa iframe {
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+@media (max-width: 800px) {
+    .servicios-lista, .miembros, .trabajos-lista {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
