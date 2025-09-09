@@ -335,3 +335,18 @@ main {
   margin-bottom: 15px;
   line-height: 1.6;
 }
+
+.redes {
+  margin-top: 10px;
+}
+
+.redes a {
+  color: #333; /* color inicial */
+  font-size: 1.5rem; /* tamaño de icono */
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+.redes a:hover {
+  color: #e63946; /* color al pasar el mouse */
+}
