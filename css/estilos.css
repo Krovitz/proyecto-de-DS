@@ -137,6 +137,68 @@ header {
     line-height: 1.6;
     color: var(--gris-oscuro);
 }
+
+.como-trabajamos {
+    background: var(--blanco);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    padding: 3rem 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    text-align: center;
+}
+.como-trabajamos h1 {
+    font-size: 2.5rem;
+    color: var(--rojo);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.proceso-lista {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.proceso-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background: var(--gris);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.proceso-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.proceso-numero {
+    background: var(--rojo);
+    color: var(--blanco);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+}
+.proceso-contenido {
+    flex: 1;
+    text-align: left;
+}
+.proceso-contenido h3 {
+    color: var(--rojo);
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+.proceso-contenido p {
+    color: var(--gris-oscuro);
+    line-height: 1.6;
+    margin: 0;
+}
 .cta {
     display: inline-block;
     background: var(--blanco);
@@ -307,6 +369,21 @@ main {
     .navbar {
         flex-direction: column;
         gap: 1rem;
+    }
+    .proceso-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    .proceso-numero {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        align-self: center;
+    }
+    .proceso-contenido {
+        text-align: center;
+    }
+    .como-trabajamos h1 {
+        font-size: 2rem;
     }
 }
 .foto-miembro {
