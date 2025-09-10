@@ -60,11 +60,13 @@ header {
     margin-bottom: 2rem;
 }
 .hero-image img {
-    width: auto;
-    max-width: 700px;
-    height: auto;
+    width: 100%;        /* ocupa siempre el ancho de su contenedor */
+    max-width: 700px;   /* pero nunca se estira más de 700px */
+    height: auto;       /* mantiene proporción */
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    display: block;
+    margin: 0 auto;     /* la centra cuando no llega a 100% */
 }
 .hero-content h1 {
     font-size: 2.5rem;
@@ -332,21 +334,4 @@ main {
 .como-trabajamos ol li {
   margin-bottom: 15px;
   line-height: 1.6;
-}
-.contacto ol {
-  list-style: decimal;
-  padding-left: 1.5rem;
-}
-
-.contacto ol li {
-  margin-bottom: 1rem; /* espacio entre cada paso */
-}
-
-.contacto {
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  margin: 2rem auto;
-  max-width: 1000px;
 }
