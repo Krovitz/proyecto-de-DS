@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SoftNova Solutions - Home</title>
     <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   </head>
   <body>
     <header>
@@ -21,11 +22,18 @@
     </header>
     <main>
       <section class="hero">
-        <div class="hero-image">
-          <img
-            src="img\imagen inicio.png"
-            alt="Equipo de SoftNova Solutions trabajando"
-          />
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="false" data-bs-keyboard="false" data-bs-pause="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3500">
+              <img class="d-block w-100" src="img/imagen inicio.png" alt="Equipo de SoftNova Solutions trabajando" />
+            </div>
+            <div class="carousel-item" data-bs-interval="3500">
+              <img class="d-block w-100" src="img/plataformas-de-venta-online.jpg" alt="Proyecto destacado 2" />
+            </div>
+            <div class="carousel-item" data-bs-interval="3500">
+              <img class="d-block w-100" src="img/young-male-web-designers-working-on-computer.jpg" alt="Proyecto destacado 3" />
+            </div>
+          </div>
         </div>
         <div class="hero-content">
           <h1>Transformamos ideas en soluciones digitales</h1>
@@ -155,5 +163,6 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
